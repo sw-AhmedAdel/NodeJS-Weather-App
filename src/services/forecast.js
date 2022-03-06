@@ -11,7 +11,8 @@ function forecast (long , lat , callback)  {
      callback('Please specify a valid location ', undefined)
    }
    else {
-    callback(undefined , `${ body.current.temperature}°F|°C degress out, weather description is ${body.current.weather_descriptions}` )
+    callback(undefined , `${ body.current.temperature}°F|°C degress out, weather description is ${body.current.weather_descriptions},
+    time is:${body.current.observation_time}, widn speed is :${ body.current.wind_speed} km/h` )
    }
  })
 }
