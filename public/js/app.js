@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit', async (e) => {
   const address = search.value
   search.value ='';
   msg1.textContent="Loading, please wait"
-  const res = await fetch(`http://localhost:3000/v1/weather/address?address=${address}`);
+  const res = await fetch(`/v1/weather/address?address=${address}`);
   const data = await res.json();
   if(data.error) {
     console.log(data.error);
