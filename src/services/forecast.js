@@ -12,7 +12,7 @@ function forecast (long , lat , callback)  {
    }
    else {
     callback(undefined , `${ body.current.temperature}°F|°C degress out, weather description is ${body.current.weather_descriptions},
-    time is:${body.current.observation_time}, widn speed is :${ body.current.wind_speed} km/h` )
+    time is:${body.current.observation_time}, wind speed is :${ body.current.wind_speed} km/h` )
    }
  })
 }
